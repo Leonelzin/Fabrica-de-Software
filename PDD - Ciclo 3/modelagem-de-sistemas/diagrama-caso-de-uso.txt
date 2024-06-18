@@ -1,0 +1,15 @@
+%% Caso de Uso
+%% Cliente pode fazer Login, Pesquisar Vídeo, Ver Detalhes do Vídeo, Assistir Vídeo, Ver Histórico
+%% Admin pode Gerenciar Vídeos, Gerenciar Clientes
+
+actor Cliente
+actor Admin
+
+Cliente --> (Login)
+Cliente --> (Pesquisar Vídeo)
+Cliente --> (Ver Detalhes do Vídeo)
+Cliente --> (Assistir Vídeo)
+Cliente --> (Ver Histórico)
+
+Admin --> (Gerenciar Vídeos)
+Admin --> (Gerenciar Clientes)

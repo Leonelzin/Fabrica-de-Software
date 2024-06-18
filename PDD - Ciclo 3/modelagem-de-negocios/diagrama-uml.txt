@@ -1,0 +1,15 @@
+graph TD
+    A[Início] --> B[Login do Cliente]
+    B --> C{Login bem-sucedido?}
+    C -->|Sim| D[Exibir Home]
+    C -->|Não| E[Mensagem de erro]
+    E --> B
+    D --> F[Pesquisar Vídeo]
+    F --> G{Vídeo encontrado?}
+    G -->|Sim| H[Exibir Detalhes do Vídeo]
+    G -->|Não| I[Mensagem de vídeo não encontrado]
+    H --> J[Assistir Vídeo]
+    J --> K[Salvar Histórico]
+    K --> D
+    D --> L[Logout]
+    L --> M[Fim]

@@ -1,0 +1,4 @@
+graph TD
+    A[Cliente] --> B[Internet]
+    B --> C[Servidor de Aplicação]
+    C --> D[Servidor de Banco de Dados]

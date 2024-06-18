@@ -1,0 +1,19 @@
+sequenceDiagram
+    participant Cliente
+    participant Sistema
+    participant BancoDeDados
+
+    Cliente->>Sistema: Login(email, senha)
+    Sistema->>BancoDeDados: Verifica Credenciais
+    BancoDeDados-->>Sistema: Credenciais Válidas
+    Sistema-->>Cliente: Acesso Permitido
+
+    Cliente->>Sistema: Pesquisar Vídeo(titulo)
+    Sistema->>BancoDeDados: Consultar Vídeos
+    BancoDeDados-->>Sistema: Retorna Vídeos
+    Sistema-->>Cliente: Exibir Resultados da Pesquisa
+
+    Cliente->>Sistema: Assistir Vídeo(idVideo)
+    Sistema->>BancoDeDados: Registrar Histórico
+    BancoDeDados-->>Sistema: Histórico Registrado
+    Sistema-->>Cliente: Iniciar Streaming

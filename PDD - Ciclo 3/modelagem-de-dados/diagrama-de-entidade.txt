@@ -1,0 +1,39 @@
+erDiagram
+    CLIENTE {
+        int id
+        string nome
+        string email
+        string senha
+    }
+
+    DEPENDENTE {
+        int id
+        string nome
+        int idade
+        int idCliente
+    }
+
+    VIDEO {
+        int id
+        string titulo
+        string categoria
+    }
+
+    ATOR {
+        int id
+        string nomeReal
+        string bibliografia
+        date dataNascimento
+    }
+
+    HISTORICO {
+        int id
+        int idCliente
+        int idVideo
+        date dataAssistida
+    }
+
+    CLIENTE ||--|{ DEPENDENTE: tem >
+    CLIENTE ||--o{ HISTORICO: assistiu >
+    VIDEO ||--o{ HISTORICO: foi assistido >
+    VIDEO ||--o{ ATOR: estrelado por >

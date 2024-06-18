@@ -1,0 +1,40 @@
+classDiagram
+    class Cliente {
+        +int id
+        +string nome
+        +string email
+        +string senha
+        +List<Dependente> dependentes
+    }
+
+    class Dependente {
+        +int id
+        +string nome
+        +int idade
+    }
+
+    class Video {
+        +int id
+        +string titulo
+        +string categoria
+        +List<Ator> atores
+    }
+
+    class Ator {
+        +int id
+        +string nomeReal
+        +string bibliografia
+        +date dataNascimento
+    }
+
+    class Historico {
+        +int id
+        +int idCliente
+        +int idVideo
+        +date dataAssistida
+    }
+
+    Cliente "1" -- "0..*" Dependente : tem >
+    Video "0..*" -- "0..*" Ator : estrelado por >
+    Cliente "1" -- "0..*" Historico : assistiu >
+    Video "1" -- "0..*" Historico : foi assistido >
