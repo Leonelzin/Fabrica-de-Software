@@ -1,6 +1,4 @@
-🛠️ Software Factory Materials for Software Engineering Course 📚
-
-# Software Factory Materials for Software Engineering Course
+# 🛠️ Software Factory Materials for Software Engineering Course 📚
 
 Welcome to the Software Factory module of the Software Engineering course! This repository hosts a comprehensive collection of materials curated to enrich your learning experience. Whether you're a beginner or an experienced developer, these resources are designed to help you grasp essential concepts and practices in software development.
 
